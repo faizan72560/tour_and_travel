@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.image-preview img{
+  height: 14rem;
+  width: 14rem;
+ 
+  
+}
+
+.image-preview{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container-mid{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  /* margin: 2rem 1rem 1rem 6rem; */
+  
+}
+.containermid{
+  margin: 1rem 1rem 1rem 1rem;
+
+
+}
+
+body{
+  background-image: url("place1.jpg");
+  height: 100%;
+
+
+
+}
+.btn btn-primary{
+  margin: 3rem 3rem 3rem 3rem ;
+}
+
+.container1 input{
+  /* width: 15rem; */
+  /* margin: 0rem 0rem 0rem 35rem ; */
+   
+}
+
+.container1{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  margin: auto;
+}
+
+
+.container2{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 5rem 1rem 1rem;
+  
+
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a{
+  text-decoration: none;
+  
+}
+
+nav a{
+  text-decoration: none;
+}
+.navbar-custom{
+  background-color: cadetblue;
+}
