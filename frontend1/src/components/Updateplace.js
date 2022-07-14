@@ -22,7 +22,7 @@ const Updateplace = () => {
         console.log('hello')
         
         const _id=localStorage.getItem("placeid")
-        const res= await axios.put(`http://localhost:4000/api/updatepost/${_id}`,{title,description,adress,location})
+        const res= await axios.put(`/api/updatepost/${_id}`,{title,description,adress,location})
         setalert(true)
         dispatch(getplaces())
         

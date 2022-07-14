@@ -17,7 +17,7 @@ const Signup = () => {
     e.preventDefault()
     setisLoading(true)
     try{
-      const res=  await fetch('http://localhost:4000/api/users/signup',{
+      const res=  await fetch('/api/users/signup',{
         method:'POST',
         headers:{
           'content-Type': "application/json"
@@ -49,7 +49,7 @@ const Signup = () => {
     <div>
       <br/>
       {alert&&<div class="alert alert-success" role="alert">
-  {alertdata.error}
+  {alertdata.error|| alertdata.message}
 </div>}
       <br/>
 

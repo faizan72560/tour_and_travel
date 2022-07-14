@@ -89,7 +89,7 @@ dispatch(getplaces())
     setalert(true)
     
 
-    const res=await axios.delete(`http://localhost:4000/api/deletepost/${id}`)
+    const res=await axios.delete(`/api/deletepost/${id}`)
     dispatch(getplaces())
     
 

@@ -7,7 +7,7 @@ export const loginUser=(email,password)=>async(dispatch)=>{
 
         dispatch({type:"LoginRequest"})
        
-        const data=await axios.post("http://localhost:4000/api/users/login",{email,password},{
+        const data=await axios.post("/api/users/login",{email,password},{
             withCredentials:true,
             headers: {'Content-Type': 'application/json'}
         })
@@ -42,7 +42,7 @@ export const LoadUser=()=>async(dispatch)=>{
 
         dispatch({type:"LoadRequest"})
 
-        const {data}=await axios.get("http://localhost:4000/api/users/me",{
+        const {data}=await axios.get("/api/users/me",{
             withCredentials:true,
         
 
@@ -70,7 +70,7 @@ export const logoutUser = () => async (dispatch) => {
         type: "LogoutUserRequest",
       });
   
-      await axios.get("http://localhost:4000/api/users/logout",{withCredentials:true});
+      await axios.get("/api/users/logout",{withCredentials:true});
   
       dispatch({
         type: "LogoutUserSuccess",
@@ -95,7 +95,7 @@ export const logoutUser = () => async (dispatch) => {
         withCredentials:true
       }
   
-    const {data}= await axios.get("http://localhost:4000/api/getplacebyuserid",config);
+    const {data}= await axios.get("/api/getplacebyuserid",config);
   
       dispatch({
         type: "GetPlacesSuccess",

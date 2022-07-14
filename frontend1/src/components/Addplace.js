@@ -82,7 +82,7 @@ const Addplace = () => {
           
       }
       
-     const res= await axios.post('http://localhost:4000/api/add',formData,config
+     const res= await axios.post('/api/add',formData,config
     //  {
       
        
